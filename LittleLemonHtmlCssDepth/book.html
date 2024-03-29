@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Little Lemon</title>
+
+  <meta property="og:title" content="Book a Table">
+  <meta property="og:type"  content="website">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:url"   content="https://littlelemon/">
+  <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Little Lemon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="images/headerLogo.png" alt="Little Lemon logo">
+  </header>
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="book.html">Book</a></li>
+        <li><a href="about.html">About Us</a></li>
+    </ul>
+</nav>
+  <main class="form">
+    <form action="post">
+      <div>
+      <label for="userEmail">Email</label>
+      <input type="email" id="userEmail" name="userEmail">
+      </div>
+      <div>
+      <label for="bookingDate">Booking Date</label>
+      <input type="date" id="bookingDate" name="bookingDate">
+      </div>
+      <div>
+      <label for="peopleNumber">Number of People</label>
+      <input type="range" id="peopleNumber" name="peopleNumber" min="1" max="8" oninput="this.nextElementSibling.value = this.value">
+      <output>2</output>
+      </div>
+      <div>
+      <label for="confirmPolicy">
+      <input type="checkbox" id="confirmPolicy" name="confirmPolicy" required>
+      I agree to the cancellation policy
+      </label>
+      </div>
+      <button type="submit">Book Now</button>
+    </form>
+  </main>
+</body>
+<footer>
+  <div>
+      <img src="images/footerLogo.png" alt="Little Lemon logo" >
+  </div>
+  <div>
+      <p class="copyright">Copyright Little Lemon</p>
+  </div>
+</footer>
+</html>
